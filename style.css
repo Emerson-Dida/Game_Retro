@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Quicksand:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(165, 183, 198);
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.519);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    gap: 5px;
+}
+
+header h1 {
+    font-family: "Quicksand", serif;
+    font-size: 50px;
+
+    color: white;
+}
+
+header .material-icons{
+    color: rgba(2, 246, 205, 0.782);
+    font-size: 40px;
+}
+
+
+main{
+    display: flex;  
+    justify-content: center;
+}
+
+video {
+    display: flex;
+    margin-top: 40px;
+   border-radius: 15px;
+    width: 430px;
+    height: 380px;
+    background-color: black;
+    
+    
+    
+    
+}
+
+main .tv-tubo{
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    top: 130px;
+    left: 360px;
+    
+}
+
+main .tv-tubo p{
+    display: none;
+    position: fixed;
+    font-family: "Quicksand", serif;
+    font-size: 50px;
+    color: white;
+    top: 280px;
+    left: 500px;
+    animation: text-tv .8s infinite linear;
+
+}
+
+
+main .tv-tubo img {
+    border-radius: 15px;
+}
+
+footer{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+main .btn{
+    
+    display: flex;
+    height: 50px;
+    padding: 10px;
+}
+
+
+main .btn button {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 550;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: "Quicksand", serif;
+    transition: 0.5s;
+}
+
+
+main .btn button:hover{
+    background-color: rgb(7, 113, 113);
+    border: 2px solid black;
+    color: white;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.564);
+    color: white;
+    font-family: "Quicksand", serif;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+
+}
+
+#msg {
+    font-family: "Quicksand", serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: red;
+    margin-top: 30px;
+}
+
+
+@keyframes text-tv {
+    0% {
+      color: white;
+    }
+
+    100% {
+        color: black;
+    }
+}
+
+@keyframes reset {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
